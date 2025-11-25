@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo cartográfico de la Tierra Media. Rutas, regiones y estadísticas de viaje para la Comunidad del Anillo.">
+    <meta name="description" content="Catálogo cartográfico de la Tierra Media.">
     <meta name="author" content="Adrián Díaz García">
     <title>Tierra Media Maps | Cartografía Épica</title>
 
     <link rel="stylesheet" href="css/estils.css">
-    <link rel="icon" sizes="16x16 32x32 48x48" type="image/jpg" href="https://i.etsystatic.com/15283778/c/1470/1168/245/402/il/950bf5/3838679106/il_680x540.3838679106_r6x3.jpg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/jpeg" href="https://i.etsystatic.com/15283778/c/1470/1168/245/402/il/950bf5/3838679106/il_680x540.3838679106_r6x3.jpg">
 </head>
 <body>
 
     <header class="main-header">
-        <div class="logo">Tierra Media Maps</div> <nav>
+        <div class="logo">Tierra Media Maps</div> 
+        <nav>
             <ul>
                 <li><a href="#" class="active">Inicio</a></li>
                 <li><a href="#">Mapas</a></li>
@@ -29,122 +33,139 @@
                 <img src="https://i0.wp.com/elanillounico.com/wp-content/gallery/mapas/Tierra-Media-bicolor-Juan-M.-VillaSD.jpg" alt="Mapa de la Tierra Media">
             </div>
             <div class="hero-content">
-                <h1>[ Adrián Díaz]</h1>
+                <h1>[ Adrián Díaz ]</h1>
                 <p>Guía oficial de cartografía para la Tierra Media</p>
                 <button class="btn-primary">Ver Mapa Completo</button>
             </div>
         </section>
 
         <section class="about container">
-                <h2>Explora los reinos olvidados</h2>
-            <p>
-                Descubre los vastos y detallados mapas de la Tierra Media, hogar de hobbits, elfos, enanos y muchas otras criaturas fascinantes. 
-                Estos mapas te ayudarán a visualizar los lugares icónicos de las obras de J.R.R. Tolkien. 
-                Advertencia: No nos hacemos responsables si acabas en una cueva de trasgos.
-            </p>
+            <h2>Explora los reinos olvidados</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://img.freepik.com/foto-gratis/paisaje-montanas-niebla_1160-753.jpg" alt="Paisaje de la Tierra Media">
+                </div>
+                <div class="about-text">
+                    <p> Descubre los vastos y detallados mapas de la Tierra Media, hogar de hobbits, elfos, enanos y muchas otras criaturas fascinantes. 
+                        Estos mapas te ayudarán a visualizar los lugares icónicos de las obras de J.R.R. Tolkien. 
+                        Advertencia: No nos hacemos responsables si acabas en una cueva de trasgos.
+                    </p>
+
+                    <ol>
+                        <li>Detalles geográficos precisos y escalados.</li>
+                        <li>Rutas principales y caminos ocultos.</li>
+                        <li>Señalización de zonas de peligro (Orcos).</li>
+                        <li>Refugios seguros y posadas recomendadas.</li>
+                        <li>Ilustraciones artísticas de la Tercera Edad.</li>
+                    </ol>
+                    <button class="btn-primary">Saber más</button>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Cartografía General</h2>
-            <figure>
-                <img 
-                    src="https://i0.wp.com/elanillounico.com/wp-content/gallery/mapas/Tierra-Media-bicolor-Juan-M.-VillaSD.jpg" 
-                    alt="Mapa completo de la Tierra Media mostrando desde La Comarca hasta Mordor" 
-                    width="600" 
-                    height="auto"> <figcaption>
-                    Fig. 1: Mapa político y físico de la Tercera Edad. Fuente: El Anillo Único.
-                </figcaption>
-            </figure>
+        <section class="offers">
+            <div class="container">
+                <h2>Rutas Destacadas</h2>
+                <p class="subtitle">Los caminos más transitados por nuestros viajeros (y hobbits)</p>
+
+                <div class="offers-grid">
+                    <article class="offer-card">
+                        <img src="https://static.wikia.nocookie.net/eldragonverde/images/3/32/La_Comarca.jpg" alt="La Comarca">
+                        <h3>La Comarca &#8594; Rivendel</h3>
+                        <p>Dificultad: Baja. Ideal para ponis. Cuidado con los Nazgûl en el vado.</p>
+                    </article>
+                    <article class="offer-card">
+                        <img src="https://static.wikia.nocookie.net/eldragonverde/images/0/0c/Rivendel_-_El_Hobbit.jpg" alt="Rivendel">
+                        <h3>Rivendel &#8594; Moria</h3>
+                        <p>Dificultad: Alta. Se recomienda decir "amigo" para entrar.</p>
+                    </article>
+                    <article class="offer-card">
+                        <img src="https://static.wikia.nocookie.net/lotr/images/3/31/Abismo_de_Helm.jpg" alt="Abismo de Helm">
+                        <h3>Rohan &#8594; Gondor</h3>
+                        <p>Ruta rápida a caballo. Vistas espectaculares de las almenaras.</p>
+                    </article>
+                    <article class="offer-card">
+                        <img src="https://static.wikia.nocookie.net/lotr/images/e/e3/Monte_del_Destino.jpg" alt="Mordor">
+                        <h3>Mordor (Solo ida)</h3>
+                        <p>No se entra simplemente caminando. Peligro extremo (10/10)</p>
+                    </article>
+                </div>
+            </div>
         </section>
+            
+        <section class="contact container">
+            <h2>¿Necesitas un guía?</h2>
+            <div class="form-wrapper">
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nombre del viajero</label>
+                            <input type="text" id="nom" name="nom" placeholder="Frodo Bolsón">
+                        </div>
+                        <div class="form-group">
+                            <label for="raza">Raza</label>
+                            <input type="text" id="raza" name="raza" placeholder="Hobbit, Elfo, Enano...">
+                        </div>
+                    </div>
 
-        <section>
-            <h2>Logística de Viaje: La Comunidad</h2>
-            <p>Tabla comparativa de rutas y peligrosidad estimada.</p>
+                    <div class="form-group">
+                        <label for="email">Correo (o dirección de cuervo)</label>
+                        <input type="email" id="email" name="email" placeholder="frodo@comarca.middle-earth">
+                    </div>
 
-            <table border="1">
-                <caption>Estadísticas de desplazamiento en la Tierra Media</caption>
-                
-                <thead>
-                    <tr>
-                        <th scope="col">Ruta</th>
-                        <th scope="col">Transporte</th>
-                        <th scope="col">Nivel de Peligro (1-10)</th>
-                        <th scope="col">Tiempo estimado</th>
-                    </tr>
-                </thead>
+                    <div class="form-group">
+                        <label>Afiliación</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="bando" value="luz"> Comunidad</label>
+                            <label><input type="radio" name="bando" value="oscuridad"> Mordor</label>
+                            <label><input type="radio" name="bando" value="neutral"> Neutral</label>
+                        </div>
+                    </div>
 
-                <tbody>
-                    <tr>
-                        <td>Comarca &#8594; Rivendel</td>
-                        <td>Poney / A pie</td>
-                        <td>4 (Nazgûls cerca)</td>
-                        <td>1 mes</td>
-                    </tr>
-                    <tr>
-                        <td>Rivendel &#8594; Moria</td>
-                        <td>A pie</td>
-                        <td>8 (Balrog incluido)</td>
-                        <td>2 semanas</td>
-                    </tr>
-                    <tr>
-                        <td>Isengard &#8594; Abismo de Helm</td>
-                        <td>Huargo / Caballo</td>
-                        <td>9 (Ejército de Uruk-hai)</td>
-                        <td>2 días</td>
-                    </tr>
-                </tbody>
+                    <div class="form-group">
+                        <label>Intereses</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interes" value="mapas"> Mapas</label>
+                            <label><input type="checkbox" name="interes" value="rutas"> Rutas</label>
+                            <label><input type="checkbox" name="interes" value="joyas"> Joyería Mágica</label>
+                            <label><input type="checkbox" name="interes" value="comida"> Segundos desayunos</label>
+                        </div>
+                    </div>
 
-                <tfoot>
-                    <tr>
-                        <td colspan="4">Nota: Uno no entra simplemente caminando en Mordor (Peligro: 10/10).</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+                    <div class="form-group">
+                        <label for="descripcio">Mensaje</label>
+                        <textarea id="descripcio" name="descripcio" rows="4" placeholder="Dí lo que tengas que decir..."></textarea>
+                    </div>
 
-        <section>
-            <h2>Información Adicional</h2>
-
-            <h3>Características de los mapas</h3>
-            <ul>
-                <li>Detalles geográficos precisos (montañas, ríos).</li>
-                <li>Rutas y caminos importantes (Camino Viejo).</li>
-                <li>Regiones y territorios destacados (Rohan, Gondor).</li>
-                <li>Ilustraciones artísticas.</li>
-            </ul>
-
-            <h3>Orden recomendado de lectura</h3>
-            <ol>
-                <li>El Hobbit (Ida y Vuelta).</li>
-                <li>El Señor de los Anillos: La Comunidad del Anillo.</li>
-                <li>El Señor de los Anillos: Las Dos Torres.</li>
-                <li>El Señor de los Anillos: El Retorno del Rey.</li>
-                <li>El Silmarillion (Solo para valientes muy intensos).</li>
-            </ol>
-
-            <h3>Recursos Externos</h3>
-            <ul>
-                <li>
-                    <a href="https://es.wikipedia.org/wiki/J._R._R._Tolkien">Biografía de J.R.R. Tolkien</a>
-                </li>
-                <li>
-                    <a href="http://lotrproject.com/map/" target="_blank">(Mapa Interactivo)</a>
-                </li>
-                <li>
-                    <a href="https://www.tolkienestate.com/" target="_blank">The Tolkien Estate (Oficial)</a>
-                </li>
-            </ul>
+                    <button type="submit" class="btn-primary btn-wide">Enviar Cuervo</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <hr>
-
     <footer>
-        <p>
-            &copy; 2025 Desarrollado por <strong>Adrián Díaz García</strong>.
-            <br>
-            <small>Código forjado en los fuegos del Monte del Destino.</small>
-        </p>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>ADRIÁN D.</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Cookies (Lembas)</a></li>
+                    <li><a href="#">Términos de la Tierra Media</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">El Silmarillion</a></li>
+                    <li><a href="#">Mapas Antiguos</a></li>
+                    <li><a href="#">Bestiario</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>
