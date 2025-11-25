@@ -1,0 +1,256 @@
+:root {
+
+    --color-primary: #27ae60;
+    --color-bg-light: #eafaf1;
+    --color-bg-grey: #e6e6e6;
+    --color-text: #2c3e50;
+    --font-main: Arial, sans-serif;
+}
+.logo img {
+
+    height: 80px; 
+    width: auto;  
+    display: block; 
+}
+* { 
+    margin: 0; padding:0; box-sizing: border-box; 
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-light);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 2rem; 
+}
+.btn-primary { 
+    background-color: var(--color-primary); 
+    color: white; 
+    border: none; 
+    padding: 10px 30px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    margin-top: 10px;
+    
+    display: inline-block;  
+    text-decoration: none;  
+    text-align: center;     
+}
+.main-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 2rem; 
+    background: white; 
+}
+.main-header nav ul { 
+    display: flex; 
+    list-style: none; 
+    gap: 20px; 
+}
+.main-header nav a { 
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+.main-header nav a.active { 
+    color: var(--color-primary); 
+}
+
+.hero { 
+    display: flex; 
+    min-height: 400px; 
+}
+.hero-image, .hero-content { 
+    flex: 1; 
+}
+.hero-image img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.hero-content { 
+    background-color: 
+    var(--color-bg-light); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; padding: 2rem; 
+}
+.hero-content h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+}
+.about-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; margin-top: 1rem; 
+}
+.about-image img { 
+    width: 100%; height: auto; 
+    border-radius: 10px; 
+}
+.offers { background-color: var(--color-bg-light); 
+    padding: 3rem 0; text-align: center; 
+}
+.offers-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; text-align: left; 
+    margin-top: 2rem; 
+}
+.offer-card { 
+    background: white; 
+    padding-bottom: 1rem; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+.offer-card img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+.offer-card h3, .offer-card p { 
+    padding: 0.5rem 1rem; 
+}
+.form-wrapper { 
+    background-color: var(--color-bg-grey); 
+    padding: 2rem; 
+    border-radius: 30px; 
+}
+.form-row { 
+    display: flex; 
+    gap: 2rem; 
+}
+.form-group > label { 
+    font-weight: bold; 
+    font-size: 1rem; 
+    margin-bottom: 10px; 
+    display: block; 
+    color: var(--color-primary); 
+}
+.radio-group{ 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start;
+}
+.radio-group label { 
+    display: flex; 
+    align-items: center;
+    width: auto; 
+    background-color: white;
+    padding: 10px 20px; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: all 0.2s; 
+}
+.radio-group label:hover { 
+    border-color: var(--color-primary); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.radio-group input[type="radio"] {
+    margin-right: 10px; 
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 15px; /* Espacio entre las cajas blancas */
+    margin-top: 10px;
+}
+.checkbox-group label {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;          
+    
+    /* Estilo de la caja */
+    background-color: white;
+    padding: 5px 10px;      /* Un poco más de aire dentro */
+    border-radius: 8px;
+    border: 1px solid #e0e0e0; /* Un borde gris muy sutil para definirla mejor */
+    cursor: pointer;
+    
+    /* Evita que el texto se parta en dos líneas de forma fea */
+    white-space: nowrap; 
+    overflow: hidden;    /* Por si el texto es larguísimo, que no se salga */
+    text-overflow: ellipsis; /* Añade "..." si se corta */
+    
+    transition: all 0.2s ease;
+}
+.checkbox-group label:hover {
+    border-color: var(--color-primary); /* Borde verde al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.checkbox-group input[type="checkbox"] {
+    /* Esto asegura que no se separe del texto */
+    margin-right: 12px; /* Un espacio fijo y bonito entre caja y texto */
+    /* Tamaño y color */
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-primary); /* Verde al marcarlo */
+    /* Evita que el checkbox se encoja si falta espacio */
+    flex-shrink: 0; 
+}
+.checkbox-group label {
+    font-size: 0.95rem;
+    color: #555; /* Un gris oscuro queda más elegante que el negro puro */
+}
+/* === AJUSTE DEL TEXTAREA (MENSAJE) === */
+textarea#descripcio {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    font-family: inherit;
+    resize: vertical; 
+    margin-bottom: 20px;
+}
+textarea#descripcio:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.2); /* Sutil brillo verde */
+}
+.btn-wide { 
+    width: 200px; 
+    display: block; 
+    margin: 2rem auto 0; 
+}
+footer { background-color: var(--color-bg-light); 
+    padding: 3rem 0; 
+    margin-top: 2rem; 
+}
+.footer-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0 2rem; 
+}
+.footer-links { 
+    display: flex; 
+    gap: 4rem; 
+    list-style: none; 
+}
+.footer-links a { 
+    text-decoration: none; 
+    color: #333; 
+}
+.footer-social a { 
+    margin-left: 10px; 
+    color: #333; 
+    font-size: 1.5rem; 
+}
