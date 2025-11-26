@@ -1,83 +1,88 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo cartográfico de la Tierra Media.">
-    <meta name="author" content="Adrián Díaz García">
-    <title>Tierra Media Maps | Cartografía Épica</title>
+<!DOCTYPE html>    <!-- Declaración base de un documento HTML5-->
+<html lang="es">   <!-- El idioma principal del contenido es español -->
+<head>  <!-- Inicio de la sección de cabecera -->
+    <meta charset="UTF-8">  <!-- Codificación de caracteres UTF-8 para soporte internacional -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Configuración para diseño responsivo -->
+    <meta name="description" content="Catálogo cartográfico de la Tierra Media.">  <!-- Descripción raíz de la página web-->
+    <meta name="author" content="Adrián Díaz García">  <!-- Autor del documento -->
+    <title>Tierra Media Maps | Cartografía Épica</title>  <!-- Título que aparece en la pestaña del navegador -->
 
-    <link rel="stylesheet" href="css/estils.css">
+    <link rel="stylesheet" href="css/estils.css">  <!-- Enlace a la hoja de estilos externa CSS-->
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Enlace a la biblioteca de iconos Font Awesome para iconos redes sociales -->
     
-    <link rel="icon" sizes="16x16 32x32 48x48" type="image/jpeg" href="img/icono-anillo.webp">
-</head>
-<body>
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/jpeg" href="img/icono-anillo.webp">  <!-- Ícono del sitio web -->
+</head>  <!-- Fin de la sección de cabecera -->
+<body> <!-- Inicio del cuerpo del documento -->
 
-    <header class="main-header">
-        <div class="logo">
-            <img src="img/Tierra Media Maps.png" alt="Logo Tierra Media Maps">
-        </div> 
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Inicio</a></li>
-                <li><a href="#">Mapas</a></li>
-                <li><a href="#">Rutas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="main-header" id="inicio">  <!-- Inicio del encabezado principal -->
+        <div class="logo">  <!-- Contenedor del logo -->
+            <img src="img/Tierra Media Maps.png" alt="Logo Tierra Media Maps">  <!-- Imagen del logo -->
+        </div>  <!-- Cierre del contenedor del logo -->
+        <nav> <!-- Navegación principal -->
+            <ul>  <!-- Lista desordenada de enlaces de navegación -->
+                <li><a href="#inicio" class="active">Inicio</a></li> <!-- Enlace activo a la página de inicio -->
+                <li><a href="https://i0.wp.com/elanillounico.com/wp-content/gallery/mapas/Tierra-Media-bicolor-Juan-M.-VillaSD.jpg" 
+                       target="_blank"
+                       rel="noopener noreferrer"> <!-- Enlace externo a un mapa de la Tierra Media -->
+                       Mapas
+                    </a>
+                </li> <!-- Enlace a la sección de mapas -->
+                <li><a href="#rutas">Rutas</a></li>  <!-- Enlace a la sección de rutas -->
+                <li><a href="#contacto">Contacto</a></li>  <!-- Enlace a la sección de contacto -->
+            </ul>  <!-- Cierre de la lista de navegación -->
+        </nav> <!-- Cierre de la navegación principal -->
+    </header> <!-- Fin del encabezado principal -->
 
-    <main>
-        <section class="hero">
-            <div class="hero-image">
-                <img src="img/Tierra-Media-bicolor.webp" alt="Mapa de la Tierra Media">
-            </div>
-            <div class="hero-content">
+    <main> <!-- Inicio del contenido principal -->
+        <section class="hero">  <!-- Sección destacada (hero) -->
+            <div class="hero-image">  <!-- Contenedor de la imagen destacada -->
+                <img src="img/Tierra-Media-bicolor.webp" alt="Mapa de la Tierra Media"> <!-- Imagen del mapa de la Tierra Media -->
+            </div> <!-- Cierre del contenedor de la imagen destacada -->
+            <div class="hero-content"> <!-- Contenedor del contenido destacado -->
                 <h1>[ Adrián Díaz García]</h1>
                 <p>Guía oficial de cartografía para la Tierra Media</p>
                 <a href="img/Tierra-Media-bicolor.webp" 
                     class="btn-primary" 
                     target="_blank" 
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"> 
                     Ver Mapa Completo
-                </a>
-            </div>
-        </section>
+                </a> <!-- Botón para ver el mapa completo en una nueva pestaña -->
+            </div> <!-- Cierre del contenedor del contenido destacado -->
+        </section> <!-- Fin de la sección destacada -->
 
-        <section class="about container">
+        <section class="about container"> <!-- Sección "Sobre Nosotros" -->
             <h2>Explora los reinos olvidados</h2>
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="img/comunidad-montañas.jpg" alt="Paisaje de la Tierra Media">
-                </div>
-                <div class="about-text">
+            <div class="about-grid"> <!-- Contenedor de la cuadrícula de contenido -->
+                <div class="about-image">  <!-- Contenedor de la imagen -->
+                    <img src="img/comunidad-montañas.jpg" alt="Paisaje de la Tierra Media"> <!-- Imagen representativa de la Tierra Media -->
+                </div> <!-- Cierre del contenedor de la imagen -->
+                <div class="about-text"> <!-- Contenedor del texto -->
 
-                    <ol>
+                    <ol>  <!-- Lista ordenada de características -->
                         <h2>Descubre los vastos y detallados mapas de la Tierra Media, hogar de hobbits, elfos, enanos y muchas otras criaturas fascinantes.</h2>
-                        <li>Detalles geográficos precisos y escalados.</li>
+                        <li>Detalles geográficos precisos y escalados.</li> <!-- Elementos de la lista -->
                         <li>Rutas principales y caminos ocultos.</li>
                         <li>Señalización de zonas de peligro (Orcos).</li>
                         <li>Refugios seguros y posadas recomendadas.</li>
                         <li>Ilustraciones artísticas de la Tercera Edad.</li>
-                    </ol>
-                    <button class="btn-primary">Saber más</button>
+                    </ol> <!-- Cierre de la lista ordenada -->
+                    <button class="btn-primary">Saber más</button>  <!-- Botón para obtener más información -->
                 </div>
             </div>
         </section>
 
-        <section class="offers">
+        <section class="offers" id="rutas"> <!-- Sección de ofertas/rutas -->
             <div class="container">
                 <h2>Rutas Destacadas</h2>
                 <p class="subtitle">Los caminos más transitados por nuestros viajeros (y hobbits).</p>
 
                 <div class="offers-grid">
-                    <article class="offer-card">
-                        <img src="img/la-comarca-bolsón.jpg" alt="La Comarca">
-                        <h3>La Comarca &#8594; Rivendel</h3>
-                        <p>Dificultad: Baja. Ideal para ponis. Cuidado con los Nazgûl en el vado.</p>
-                    </article>
+                    <article class="offer-card"> <!-- Tarjeta de oferta/ruta -->
+                        <img src="img/la-comarca-bolsón.jpg" alt="La Comarca"> <!-- Imagen representativa de la ruta -->
+                        <h3>La Comarca &#8594; Rivendel</h3> <!-- Título de la ruta -->
+                        <p>Dificultad: Baja. Ideal para ponis. Cuidado con los Nazgûl en el vado.</p> <!-- Descripción de la ruta -->
+                    </article> <!-- Cierre de la tarjeta de oferta/ruta -->
                     <article class="offer-card">
                         <img src="img/Moria-amigo.jpg" alt="Moria">
                         <h3>Rivendel &#8594; Moria</h3>
@@ -97,18 +102,18 @@
             </div>
         </section>
             
-        <section class="contact container">
+        <section class="contact container" id="contacto"> <!-- Sección de contacto -->
             <h2>¿Necesitas un guía?</h2>
             <div class="form-wrapper">
-                <form action="#" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nom">Nombre del viajero</label>
-                            <input type="text" id="nom" name="nom" placeholder="Frodo Bolsón">
-                        </div>
-                        <div class="form-group">
-                            <label for="raza">Raza</label>
-                            <input type="text" id="raza" name="raza" placeholder="Hobbit, Elfo, Enano...">
+                <form action="#" method="POST"> <!-- Formulario de contacto -->
+                    <div class="form-row"> <!-- Fila de formulario para agrupar campos -->
+                        <div class="form-group"> <!-- Grupo de formulario para el nombre -->
+                            <label for="nom">Nombre del viajero</label>  <!-- Etiqueta para el campo de nombre -->
+                            <input type="text" id="nom" name="nom" placeholder="Frodo Bolsón"> <!-- Campo de entrada de texto para el nombre -->
+                        </div> <!-- Cierre del grupo de formulario del nombre -->
+                        <div class="form-group"> <!-- Grupo de formulario para la raza -->
+                            <label for="raza">Raza</label> <!-- Etiqueta para el campo de raza -->
+                            <input type="text" id="raza" name="raza" placeholder="Hobbit, Elfo, Enano..."> <!-- Campo de entrada de texto para la raza -->
                         </div>
                     </div>
 
@@ -117,47 +122,47 @@
                         <input type="email" id="email" name="email" placeholder="frodo@comarca.middle-earth">
                     </div>
 
-                    <div class="form-group">
-                        <label>Afiliación</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="bando" value="luz"> Comunidad</label>
-                            <label><input type="radio" name="bando" value="oscuridad"> Mordor</label>
-                            <label><input type="radio" name="bando" value="neutral"> Neutral</label>
+                    <div class="form-group"> <!-- Grupo de formulario para la afiliación -->
+                        <label>Afiliación</label> <!-- Etiqueta para el campo de afiliación -->
+                        <div class="radio-group"> <!-- Contenedor del grupo de botones de opción -->
+                            <label><input type="radio" name="bando" value="luz"> Comunidad</label>  <!-- Botón de opción para la Comunidad -->
+                            <label><input type="radio" name="bando" value="oscuridad"> Mordor</label> <!-- Botón de opción para Mordor -->
+                            <label><input type="radio" name="bando" value="neutral"> Neutral</label> <!-- Botón de opción para Neutral -->
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label>Intereses</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" name="interes" value="mapas"> Mapas</label>
-                            <label><input type="checkbox" name="interes" value="rutas"> Rutas</label>
+                    <div class="form-group"> <!-- Grupo de formulario para intereses -->
+                        <label>Intereses</label> <!-- Etiqueta para el campo de intereses -->
+                        <div class="checkbox-group"> <!-- Contenedor del grupo de casillas de verificación -->
+                            <label><input type="checkbox" name="interes" value="mapas"> Mapas</label> <!-- Casilla de verificación para Mapas -->
+                            <label><input type="checkbox" name="interes" value="rutas"> Rutas</label> 
                             <label><input type="checkbox" name="interes" value="joyas"> Joyería Mágica</label>
                             <label><input type="checkbox" name="interes" value="comida"> Segundos desayunos</label>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group"> <!-- Grupo de formulario para el mensaje -->
                         <label for="descripcio">Mensaje</label>
-                        <textarea id="descripcio" name="descripcio" rows="4" placeholder="Dí lo que tengas que decir..."></textarea>
+                        <textarea id="descripcio" name="descripcio" rows="4" placeholder="Dí lo que tengas que decir..."></textarea> <!-- Área de texto para el mensaje -->
                     </div>
 
-                    <button type="submit" class="btn-primary btn-wide">Enviar Cuervo</button>
-                </form>
+                    <button type="submit" class="btn-primary btn-wide">Enviar Cuervo</button> <!-- Botón para enviar el formulario -->
+                </form> <!-- Cierre del formulario de contacto -->
             </div>
         </section>
-    </main>
+    </main> <!-- Fin del contenido principal -->
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <h3>ADRIÁN D.</h3>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Aviso Legal</a></li>
+    <footer> <!-- Inicio del pie de página -->
+        <div class="footer-container"> <!-- Contenedor del pie de página -->
+            <div class="footer-logo"> <!-- Contenedor del logo del pie de página -->
+                <h3>ADRIÁN D.</h3> <!-- Nombre o logo del pie de página -->
+            </div> <!-- Cierre del contenedor del logo del pie de página -->
+            <div class="footer-links"> <!-- Contenedor de los enlaces del pie de página -->
+                <ul> <!-- Lista desordenada de enlaces -->
+                    <li><a href="#">Aviso Legal</a></li> <!-- Enlace al aviso legal -->
                     <li><a href="#">Política de Cookies (Lembas)</a></li>
                     <li><a href="#">Términos de la Tierra Media</a></li>
-                </ul>
+                </ul> <!-- Cierre de la lista de enlaces -->
                 <ul>
                     <li><a href="#">El Silmarillion</a></li>
                     <li><a href="#">Mapas Antiguos</a></li>
@@ -165,12 +170,12 @@
                 </ul>
             </div>
             <div class="footer-social">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a> <!-- Enlace a Facebook con icono -->
                 <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
-    </footer>
+    </footer> <!-- Fin del pie de página -->
 
-</body>
-</html>
+</body> <!-- Fin del cuerpo del documento -->
+</html> <!-- Fin del documento HTML5 -->

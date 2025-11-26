@@ -1,153 +1,154 @@
+html { 
+    scroll-behavior: smooth; 
+} /* Suaviza el desplazamiento al hacer clic en enlaces internos */
 :root {
 
-    --color-primary: #27ae60;
-    --color-bg-light: #eafaf1;
-    --color-bg-grey: #e6e6e6;
-    --color-text: #2c3e50;
-    --font-main: Arial, sans-serif;
-}
+    --color-primary: #27ae60; /* Verde Tierra Media */   
+    --color-bg-light: #eafaf1; /* Verde muy claro */    
+    --color-bg-grey: #e6e6e6;  /* Gris claro */
+    --color-text: #2c3e50;  /* Gris oscuro para texto */
+    --font-main: Arial, sans-serif;  /* Fuente principal */
+} /* Variables CSS para colores y fuentes */
 .logo img {
 
-    height: 80px; 
-    width: auto;  
-    display: block; 
-}
+    height: 80px; /* Altura fija del logo */ 
+    width: auto; /* Ancho automático para mantener proporciones */   
+    display: block; /* Elimina espacio debajo de la imagen */ 
+} /* Estilo del logo en el encabezado */
 * { 
     margin: 0; padding:0; box-sizing: border-box; 
-}
-
+} /* Reseteo básico de márgenes y paddings */
 body {
-    font-family: var(--font-main);
-    background-color: var(--color-bg-light);
-    color: var(--color-text);
-    line-height: 1.6;
-}
+    font-family: var(--font-main); /* Fuente principal del sitio */
+    background-color: var(--color-bg-light); /* Color de fondo claro */
+    color: var(--color-text); /* Color de texto oscuro */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
+} /* Estilo general del cuerpo del documento */
 .container { 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 2rem; 
-}
+    max-width: 1200px; /* Ancho máximo del contenedor */ 
+    margin: 0 auto; /* Centrado horizontal */ 
+    padding: 2rem; /* Espaciado interno */ 
+} /* Contenedor principal centrado */
 .btn-primary { 
-    background-color: var(--color-primary); 
+    background-color: var(--color-primary); /* Color de fondo verde */ 
     color: white; 
-    border: none; 
-    padding: 10px 30px; 
-    border-radius: 20px; 
-    cursor: pointer; 
-    margin-top: 10px;
+    border: none; /* Sin borde */
+    padding: 10px 30px; /* Relleno interno */
+    border-radius: 20px;  /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-top: 10px; /* Espacio superior */
     
-    display: inline-block;  
-    text-decoration: none;  
-    text-align: center;     
-}
+    display: inline-block; /* Permite aplicar márgenes y paddings */  
+    text-decoration: none; /* Sin subrayado */  
+    text-align: center; /* Centrado del texto */    
+} /* Estilo de los botones primarios */
 .main-header { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex; /* Usamos flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alineación vertical centrada */
     padding: 1rem 2rem; 
     background: white;
-}
+} /* Estilo del encabezado principal */
 .main-header nav ul { 
     display: flex; 
-    list-style: none; 
-    gap: 20px; 
-}
+    list-style: none; /* Sin viñetas */
+    gap: 20px; /* Espacio entre los elementos de la lista */
+} /* Estilo de la lista de navegación */
 .main-header nav a { 
     text-decoration: none; 
     color: #333; 
-    font-weight: bold;
+    font-weight: bold; /* Negrita para los enlaces */
     padding: 8px 16px;
     border-radius: 20px;
-    transition: all 0.3s ease; 
-}
+    transition: all 0.3s ease; /* Transición suave para efectos */
+} /* Estilo de los enlaces de navegación */
 .main-header nav a:hover { 
-    background-color: var(--color-bg-light); 
-    color: var(--color-primary);
-}
+    background-color: var(--color-bg-light); /* Fondo claro al pasar el ratón */
+    color: var(--color-primary); /* Color verde al pasar el ratón */
+} /* Efecto de cambio de color e iluminació en los enlaces de navegación */
 .main-header nav a.active {
-    color: var(--color-primary); 
-}
-
+    color: var(--color-primary); /* Color verde para el enlace activo */
+} /* Estilo del enlace activo en la navegación */
 .hero { 
     display: flex; 
-    min-height: 400px; 
-}
+    min-height: 400px; /* Altura mínima de la sección hero */
+} /* Estilo de la sección hero */
 .hero-image, .hero-content { 
     flex: 1; 
-}
+} /* División equitativa entre imagen y contenido */
 .hero-image img { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-}
+    width: 100%; /* Ancho completo de la imagen */
+    height: 100%;  /* Altura completa de la imagen */
+    object-fit: cover; /* Cubre todo el contenedor sin distorsionar */
+} /* Estilo de la imagen hero */
 .hero-content { 
     background-color: 
     var(--color-bg-light); 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    align-items: center; 
+    align-items: center; /* Centrado horizontal */
     text-align: center; padding: 2rem; 
-}
+} /* Estilo del contenido hero */
 .hero-content h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem; /* Tamaño grande para el título */
     margin-bottom: 1rem; 
-}
+} /* Estilo del título hero */
 .about-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    display: grid; /* Usamos grid para el diseño */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
     gap: 2rem; margin-top: 1rem; 
-}
+} /* Estilo de la cuadrícula de la sección "Sobre Nosotros" */
 .about-image img { 
-    width: 100%; height: auto; 
+    width: 100%; height: auto; /* Imagen responsiva */
     border-radius: 10px; 
-}
+} /* Estilo de la imagen en "Sobre Nosotros" */
 .offers { background-color: var(--color-bg-light); 
     padding: 3rem 0; text-align: center; 
-}
+} /* Estilo de la sección de ofertas */
 .offers-grid { 
     display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
     gap: 2rem; text-align: left; 
     margin-top: 2rem; 
-}
+} /* Estilo de la cuadrícula de ofertas */
 .offer-card { 
     background: white; 
-    padding-bottom: 1rem; 
+    padding-bottom: 1rem; /* Espaciado inferior */
     border-radius: 8px; 
-    overflow: hidden; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-}
+    overflow: hidden; /* Evita que el contenido se desborde */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sutil sombra */
+} /* Estilo de cada tarjeta de oferta */
 .offer-card img { 
     width: 100%; 
     height: 200px; 
-    object-fit: cover; 
-}
+    object-fit: cover; /* Cubre el contenedor sin distorsionar */
+} /* Estilo de la imagen en la tarjeta de oferta */
 .offer-card h3, .offer-card p { 
     padding: 0.5rem 1rem; 
-}
+} /* Estilo del título y párrafo en la tarjeta de oferta */
 .form-wrapper { 
     background-color: var(--color-bg-grey); 
     padding: 2rem; 
     border-radius: 30px; 
-}
+} /* Estilo del contenedor del formulario */
 .form-row { 
     display: flex; 
     gap: 2rem; 
-}
+} /* Estilo de las filas del formulario */
 .form-group > label { 
     font-weight: bold; 
     font-size: 1rem; 
     margin-bottom: 10px; 
     display: block; 
     color: var(--color-primary); 
-}
+} /* Estilo de las etiquetas de los grupos de formulario */
 .radio-group{ 
     display: flex;
     flex-wrap: wrap; 
     gap: 20px; 
     justify-content: flex-start;
-}
+} /* Contenedor del grupo de botones de opción */
 .radio-group label { 
     display: flex; 
     align-items: center;
@@ -158,47 +159,42 @@ body {
     border-radius: 8px; 
     cursor: pointer;
     transition: all 0.2s; 
-}
+} /* Estilo de cada etiqueta de botón de opción */
 .radio-group label:hover { 
     border-color: var(--color-primary); 
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
+} /* Efecto al pasar el ratón sobre la etiqueta */
 .radio-group input[type="radio"] {
     margin-right: 10px; 
     width: 18px;
     height: 18px;
     accent-color: var(--color-primary);
     cursor: pointer;
-}
+} /* Estilo del botón de opción */
 .checkbox-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
     gap: 15px; /* Espacio entre las cajas blancas */
     margin-top: 10px;
-}
+} /* Contenedor del grupo de casillas de verificación */
 .checkbox-group label {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start; /* Alinea el contenido al inicio */
     align-items: center;          
-    
-    /* Estilo de la caja */
     background-color: white;
-    padding: 5px 10px;      /* Un poco más de aire dentro */
+    padding: 5px 10px;      
     border-radius: 8px;
-    border: 1px solid #e0e0e0; /* Un borde gris muy sutil para definirla mejor */
+    border: 1px solid #e0e0e0;
     cursor: pointer;
-    
-    /* Evita que el texto se parta en dos líneas de forma fea */
     white-space: nowrap; 
-    overflow: hidden;    /* Por si el texto es larguísimo, que no se salga */
-    text-overflow: ellipsis; /* Añade "..." si se corta */
-    
+    overflow: hidden;    
+    text-overflow: ellipsis; /* Añade "..." si el texto es demasiado largo */
     transition: all 0.2s ease;
-}
+} /* Estilo de cada etiqueta de casilla de verificación */
 .checkbox-group label:hover {
     border-color: var(--color-primary); /* Borde verde al pasar el ratón */
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
+} /* Efecto al pasar el ratón sobre la etiqueta */
 .checkbox-group input[type="checkbox"] {
     /* Esto asegura que no se separe del texto */
     margin-right: 12px; /* Un espacio fijo y bonito entre caja y texto */
@@ -208,12 +204,11 @@ body {
     accent-color: var(--color-primary); /* Verde al marcarlo */
     /* Evita que el checkbox se encoja si falta espacio */
     flex-shrink: 0; 
-}
+} /* Estilo de la casilla de verificación */
 .checkbox-group label {
     font-size: 0.95rem;
     color: #555; /* Un gris oscuro queda más elegante que el negro puro */
-}
-/* === AJUSTE DEL TEXTAREA (MENSAJE) === */
+} /* Estilo de la casilla de intereses*/
 textarea#descripcio {
     width: 100%;
     min-height: 120px;
@@ -224,12 +219,12 @@ textarea#descripcio {
     font-family: inherit;
     resize: vertical; 
     margin-bottom: 20px;
-}
+} /*Estilo selector descripcio*/
 textarea#descripcio:focus {
     outline: none;
     border-color: var(--color-primary);
     box-shadow: 0 0 5px rgba(39, 174, 96, 0.2); /* Sutil brillo verde */
-}
+} 
 .btn-wide { 
     width: 200px; 
     display: block; 
@@ -238,25 +233,25 @@ textarea#descripcio:focus {
 footer { background-color: var(--color-bg-light); 
     padding: 3rem 0; 
     margin-top: 2rem; 
-}
+} 
 .footer-container { 
     max-width: 1200px; 
     margin: 0 auto; 
     display: flex; 
     justify-content: space-between; 
     padding: 0 2rem; 
-}
+} 
 .footer-links { 
     display: flex; 
     gap: 4rem; 
     list-style: none; 
 }
-.footer-links a { 
-    text-decoration: none; 
-    color: #333; 
-}
+.footer-links a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color gris oscuro */
+} /* Estilo de los enlaces del pie de página */
 .footer-social a { 
     margin-left: 10px; 
     color: #333; 
     font-size: 1.5rem; 
-}
+} /* Estilo de los iconos sociales */
