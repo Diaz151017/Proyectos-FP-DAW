@@ -45,7 +45,7 @@ body {
     justify-content: space-between; 
     align-items: center; 
     padding: 1rem 2rem; 
-    background: white; 
+    background: white;
 }
 .main-header nav ul { 
     display: flex; 
@@ -55,10 +55,16 @@ body {
 .main-header nav a { 
     text-decoration: none; 
     color: #333; 
-    font-weight: bold; 
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease; 
 }
-
-.main-header nav a.active { 
+.main-header nav a:hover { 
+    background-color: var(--color-bg-light); 
+    color: var(--color-primary);
+}
+.main-header nav a.active {
     color: var(--color-primary); 
 }
 
