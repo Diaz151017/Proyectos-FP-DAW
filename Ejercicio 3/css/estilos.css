@@ -1,0 +1,15 @@
+html {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.menu_navegacion {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.menu_navegacion a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+    
