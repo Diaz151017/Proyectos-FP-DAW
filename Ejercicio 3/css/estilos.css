@@ -35,7 +35,7 @@ body {
     justify-content: space-between; /* Espacio entre elementos */
     align-items: center; /* Alineación vertical centrada */
     padding: 1rem 2rem; 
-    border-radius: 5px;
+    border-radius: 50px;
     background: white;
 }
 .menu_navegacion a {
