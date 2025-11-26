@@ -1,15 +1,88 @@
 html {
-    font-family: Arial, sans-serif;
     scroll-behavior: smooth;
 }
+:root {
+
+    --color-primary: #ffffff; /* Verde Tierra Media */
+    --color-bg-light: #352471; /* Verde muy claro */
+    --color-bg-grey: #e6e6e6;  /* Gris claro */
+    --color-text: #ffffff;  /* Gris oscuro para texto */
+    --font-main: Arial, sans-serif;  /* Fuente principal */
+}
+header {       
+    margin: 60px auto;      /* Centrado horizontalmente y con aire arriba/abajo */
+    text-align: center;     /* Todo centrado, muy solemne */
+    padding: 0 20px;
+}
+header h1 {
+    font-size: 2.5rem;      /* Grande, que se note */
+    margin-bottom: 20px;
+    color: var(--color-primary); /* Usamos tu variable blanca */
+}
+header p {
+    font-size: 1.2rem;      /* Ligeramente más grande que el texto normal */
+    margin-bottom: 40px;    /* Espacio antes del botón */
+    opacity: 0.9;           /* Un toque de transparencia queda muy "tech" */
+}
+body {
+    font-family: var(--font-main); /* Fuente principal del sitio */
+    background-color: var(--color-bg-light); /* Color de fondo claro */
+    color: var(--color-text); /* Color de texto oscuro */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
+}
 .menu_navegacion {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
+    display: flex; /* Usamos flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alineación vertical centrada */
+    padding: 1rem 2rem; 
+    border-radius: 5px;
+    background: white;
 }
 .menu_navegacion a {
+    display: inline-block;
     text-decoration: none;
-    color: #333;
+    color: var(--color-bg-light);
     font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
 }
-    
+.menu_navegacion a:hover { 
+    background-color: var(--color-bg-light); /* Fondo claro al pasar el ratón */
+    color: var(--color-primary); /* Color verde al pasar el ratón */
+    transform: scale(1.05); /* Efecto de "pop" al pasar el ratón */
+} /* Efecto de cambio de color e iluminació en los enlaces de navegación */
+.menu_navegacion a.active {
+    color: var(--color-primary); /* Color verde para el enlace activo */
+}
+/* Estilo para la sección de introducción */
+.hero-intro {
+    max-width: 800px;       /* Evita que el texto se estire de lado a lado como un chicle */
+    margin: 60px auto;      /* Centrado horizontalmente y con aire arriba/abajo */
+    text-align: center;     /* Todo centrado, muy solemne */
+    padding: 0 20px;
+}
+.hero-intro h2 {
+    font-size: 2.5rem;      /* Grande, que se note */
+    margin-bottom: 20px;
+    color: var(--color-primary); /* Usamos tu variable blanca */
+}
+.hero-intro p {
+    font-size: 1.2rem;      /* Ligeramente más grande que el texto normal */
+    margin-bottom: 40px;    /* Espacio antes del botón */
+    opacity: 0.9;           /* Un toque de transparencia queda muy "tech" */
+}
+/* Botón de llamada a la acción (CTA) */
+.boton-cta {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--color-primary); /* Fondo blanco */
+    color: var(--color-bg-light);           /* Texto morado (invertido) */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;    /* Bordes muy redondos, moderno */
+    transition: transform 0.2s ease;
+}
+.boton-cta:hover {
+    transform: scale(1.05); /* Efecto de "pop" al pasar el ratón */
+}
