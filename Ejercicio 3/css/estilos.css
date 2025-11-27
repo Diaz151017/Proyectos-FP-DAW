@@ -29,6 +29,13 @@ body {
     background-color: var(--color-bg-light); /* Color de fondo claro */
     color: var(--color-text); /* Color de texto oscuro */
     line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
+    min-height: 100vh;      /* Obliga al cuerpo a medir AL MENOS el 100% de la altura de la ventana */
+    display: flex;          /* Activa el modo flexible */
+    flex-direction: column; /* Organiza: Header arriba, Main medio, Footer abajo */
+}
+
+main {
+    flex: 1;                /* Orden: "Ocupa todo el espacio sobrante disponible" */
 }
 .menu_navegacion {
     display: flex; /* Usamos flexbox para el diseño */
@@ -152,4 +159,7 @@ footer { background-color: var(--color-bg-light);
 } 
 .footer-social a.active {
     color: var(--color-primary); /* Color verde para el enlace activo */
+}
+.videos-list a {
+    color: var(--color-primary);
 }
