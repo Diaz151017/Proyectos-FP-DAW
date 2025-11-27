@@ -1,165 +1,238 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 :root {
+    --color-primary: #ffffff; 
+    --color-bg-light: #352471; 
+    --color-bg-grey: #e6e6e6;  
+    --color-text: #ffffff;  
+    --font-main: Arial, sans-serif; 
+}
 
-    --color-primary: #ffffff; /* Verde Tierra Media */
-    --color-bg-light: #352471; /* Verde muy claro */
-    --color-bg-grey: #e6e6e6;  /* Gris claro */
-    --color-text: #ffffff;  /* Gris oscuro para texto */
-    --font-main: Arial, sans-serif;  /* Fuente principal */
+/* RESET Y ESTRUCTURA GENERAL */
+* {
+    box-sizing: border-box;
 }
-header {       
-    margin: 60px auto;      /* Centrado horizontalmente y con aire arriba/abajo */
-    text-align: center;     /* Todo centrado, muy solemne */
-    padding: 0 20px;
-}
-header h1 {
-    font-size: 3.5rem;      /* Grande, que se note */
-    margin-bottom: 20px;
-    color: var(--color-primary); /* Usamos tu variable blanca */
-}
-header p {
-    font-size: 1.2rem;      /* Ligeramente más grande que el texto normal */
-    margin-bottom: 40px;    /* Espacio antes del botón */
-    opacity: 0.9;           /* Un toque de transparencia queda muy "tech" */
-}
+
 body {
-    font-family: var(--font-main); /* Fuente principal del sitio */
-    background-color: var(--color-bg-light); /* Color de fondo claro */
-    color: var(--color-text); /* Color de texto oscuro */
-    line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
-    min-height: 100vh;      /* Obliga al cuerpo a medir AL MENOS el 100% de la altura de la ventana */
-    display: flex;          /* Activa el modo flexible */
-    flex-direction: column; /* Organiza: Header arriba, Main medio, Footer abajo */
+    font-family: var(--font-main);
+    background-color: var(--color-bg-light);
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;      /* Sticky Footer: Altura mínima */
+    display: flex;          
+    flex-direction: column; 
 }
 
 main {
-    flex: 1;                /* Orden: "Ocupa todo el espacio sobrante disponible" */
+    flex: 1; /* Sticky Footer: Empuja el pie de página abajo */
 }
+
+/* HEADER */
+header {       
+    margin: 60px auto 20px auto;      
+    text-align: center;     
+    padding: 0 20px;
+}
+header h1 {
+    font-size: 3.5rem;      
+    margin-bottom: 20px;
+    color: var(--color-primary); 
+}
+
+/* NAVEGACIÓN */
 .menu_navegacion {
-    display: flex; /* Usamos flexbox para el diseño */
-    justify-content: space-between; /* Espacio entre elementos */
-    align-items: center; /* Alineación vertical centrada */
+    display: flex; 
+    justify-content: center; /* Cambiado a center si son pocos, o space-between si ajustas ancho */
+    flex-wrap: wrap; /* Para móviles */
+    gap: 10px;
+    align-items: center; 
     padding: 12px 30px; 
     border-radius: 50px;
     background: white;
+    width: fit-content;
+    margin: 0 auto; /* Centrado */
 }
 .menu_navegacion a {
     display: inline-block; 
     text-decoration: none;
     color: var(--color-bg-light);
     font-weight: bold;
-    padding: 12px 30px;
+    padding: 10px 20px;
     border-radius: 50px;
     transition: all 0.3s ease;
 }
 .menu_navegacion a:hover { 
-    background-color: var(--color-bg-light); /* Fondo claro al pasar el ratón */
-    color: var(--color-primary); /* Color verde al pasar el ratón */
-    transform: scale(1.05); /* Efecto de "pop" al pasar el ratón */
-} /* Efecto de cambio de color e iluminació en los enlaces de navegación */
-.menu_navegacion a.active {
-    color: var(--color-primary); /* Color verde para el enlace activo */
+    background-color: var(--color-bg-light); 
+    color: var(--color-primary); 
+    transform: scale(1.05); 
 }
-/* Estilo para la sección de introducción */
+.menu_navegacion a.active {
+    background-color: var(--color-bg-light);
+    color: var(--color-primary);
+}
+
+/* SECCIONES HERO E INTRO */
 .hero-intro {
-    max-width: 800px;       /* Evita que el texto se estire de lado a lado como un chicle */
-    margin: 60px auto;      /* Centrado horizontalmente y con aire arriba/abajo */
-    text-align: center;     /* Todo centrado, muy solemne */
+    max-width: 900px;       
+    margin: 40px auto;      
+    text-align: center;     
     padding: 0 20px;
 }
 .hero-intro h2 {
-    font-size: 2.5rem;      /* Grande, que se note */
-    margin-bottom: 20px;
-    color: var(--color-primary); /* Usamos tu variable blanca */
+    font-size: 2.5rem;      
+    margin-bottom: 30px;
+    color: var(--color-primary); 
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+    display: inline-block;
 }
 .hero-intro p {
-    font-size: 1.2rem;      /* Ligeramente más grande que el texto normal */
-    margin-bottom: 40px;    /* Espacio antes del botón */
-    opacity: 0.9;           /* Un toque de transparencia queda muy "tech" */
+    font-size: 1.1rem;      
+    margin-bottom: 30px;    
+    opacity: 0.9;  
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;         
 }
-/* Botón de llamada a la acción (CTA) */
-.boton-cta {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--color-primary); /* Fondo blanco */
-    color: var(--color-bg-light);           /* Texto morado (invertido) */
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 50px;    /* Bordes muy redondos, moderno */
-    transition: transform 0.2s ease;
-}
-.boton-cta:hover {
-    transform: scale(1.05); /* Efecto de "pop" al pasar el ratón */
-}
+
+/* IMÁGENES */
 .hero-image {
     display: flex;
     justify-content: center;
-    height: auto;
     width: 100%;
+    margin-bottom: 30px;
 }
-footer { background-color: var(--color-bg-light); 
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* NUEVAS LISTAS DE MODELOS (IA, Code, Audio) - CORRECCIÓN ESTRUCTURAL */
+.model-list {
+    list-style: none; /* Quitamos los puntos de la lista principal */
+    padding: 0;
+    text-align: left; /* El contenido se lee mejor a la izquierda */
+}
+
+.model-list > li {
+    background: rgba(255, 255, 255, 0.05); /* Fondo sutil para cada tarjeta */
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.model-list h3 {
+    text-align: center;
+    color: #ffd700; /* Un toque dorado para los títulos de las IAs */
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.model-list ol {
+    margin-left: 20px;
+}
+.model-list ol li {
+    margin-bottom: 10px;
+}
+
+/* LISTAS DE RECURSOS (CAJA BLANCA) */
+.link-list, .videos-list {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 50px;
+    width: fit-content; /* Se ajusta al contenido */
+    max-width: 100%;
+    margin: 0 auto 40px auto;
+    text-align: left; /* Texto alineado a la izquierda */
+    color: var(--color-bg-light); /* Texto oscuro sobre blanco */
+}
+
+.link-list h3, .videos-list h3 {
+    color: var(--color-bg-light);
+}
+
+.link-list ol, .videos-list ol {
+    padding-left: 20px;
+}
+.link-list li, .videos-list li {
+    margin-bottom: 15px;
+    color: var(--color-bg-light);
+}
+.link-list a, .videos-list a {
+    color: var(--color-bg-light);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.link-list a:hover, .videos-list a:hover {
+    color: #d900ff;
+}
+
+/* BOTÓN CTA */
+.boton-cta {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: var(--color-primary); 
+    color: var(--color-bg-light);           
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50px;    
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 20px;
+}
+.boton-cta:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+/* FOOTER */
+footer { 
+    background-color: rgba(0,0,0,0.2); /* Un poco más oscuro que el fondo */
     padding: 3rem 0; 
-    margin-top: 2rem; 
+    margin-top: auto; 
 } 
 .footer-container { 
     max-width: 1200px; 
     margin: 0 auto; 
     display: flex; 
     justify-content: space-between; 
-    padding: 0 2rem; 
-} 
-.footer-links { 
-    display: flex; /* Usamos flexbox para el diseño */
-    justify-content: space-between; /* Espacio entre elementos */
-    align-items: center; /* Alineación vertical centrada */
-    padding: 12px 30px; 
-    border-radius: 50px;
-    background: white;
-}
-.footer-links a {
-    display: inline-block; 
-    text-decoration: none;
-    color: var(--color-bg-light);
-    font-weight: bold;
-    padding: 12px 30px;
-    border-radius: 50px;
-    transition: all 0.3s ease;   
-}
-.footer-links a:hover { 
-    background-color: var(--color-bg-light); /* Fondo claro al pasar el ratón */
-    color: var(--color-primary); /* Color verde al pasar el ratón */
-    transform: scale(1.05);
-} 
-.footer-links a.active {
-    color: var(--color-primary); /* Color verde para el enlace activo */
-}
-.footer-social { 
-    display: flex; 
     align-items: center;
-    justify-content: space-between;
-    padding: 12px 30px; 
-    border-radius: 50px;
-    background: white; 
-}
-.footer-social a {
-    display: inline-block; 
-    text-decoration: none;
-    color: var(--color-bg-light);
-    font-weight: bold;
-    padding: 12px 30px;
-    border-radius: 50px;
-    transition: all 0.3s ease;   
-}
-.footer-social a:hover { 
-    background-color: var(--color-bg-light); /* Fondo claro al pasar el ratón */
-    color: var(--color-primary); /* Color verde al pasar el ratón */
-    transform: scale(1.05);
+    padding: 0 2rem; 
+    flex-wrap: wrap;
+    gap: 20px;
 } 
-.footer-social a.active {
-    color: var(--color-primary); /* Color verde para el enlace activo */
+
+/* Estilos comunes para bloques del footer */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
-.videos-list a {
+.footer-links a, .footer-social a {
     color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.footer-links a:hover, .footer-social a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+.footer-social i {
+    font-size: 1.2rem;
 }
